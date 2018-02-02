@@ -56,6 +56,8 @@ namespace HandCodeTestSm
 
             Mouse.Click(Actions);
 
+
+
             WpfButton Login = new WpfButton(Actions);
             Actions.WindowTitles.Add("Service Manager20.1 20.1.86.107687 (20.1)");
             Actions.TechnologyName = "MSAA";

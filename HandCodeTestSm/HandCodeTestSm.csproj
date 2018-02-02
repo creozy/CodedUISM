@@ -54,6 +54,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HandCode.cs" />
+    <Compile Include="PageObjects\AddUser.cs" />
+    <Compile Include="PageObjects\MainWindow.cs" />
     <Compile Include="PageObjects\Parametrs.cs" />
     <Compile Include="PageObjects\ServerName.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
