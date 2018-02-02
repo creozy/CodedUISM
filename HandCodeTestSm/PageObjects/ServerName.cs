@@ -22,7 +22,7 @@ namespace HandCodeTestSm
             #region ServerNameWindow
             
             WpfWindow ServerName = new WpfWindow();
-            ServerName.SearchProperties[WpfWindow.PropertyNames.Name] = "Server name";
+            ServerName.SearchProperties[WpfWindow.PropertyNames.Name] = Name;
             ServerName.WindowTitles.Add(Name);
 
             WpfEdit ServNameEdit = new WpfEdit(ServerName);

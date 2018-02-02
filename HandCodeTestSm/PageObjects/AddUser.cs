@@ -22,17 +22,6 @@ namespace HandCodeTestSm
             mainWindow.SearchProperties[WpfWindow.PropertyNames.Name] = "Service Manager20.1 20.1.86.107687 (20.1)";
             mainWindow.WindowTitles.Add("Service Manager20.1 20.1.86.107687 (20.1)");
 
-            WpfCell Servercell = new WpfCell(mainWindow);
-            Servercell.WindowTitles.Add(SMname);
-            Servercell.TechnologyName = "MSAA";
-            Servercell.SearchProperties.Add("ControlType", "Cell");
-            Servercell.SearchProperties[WpfCell.PropertyNames.Value] = "ygs.t1";
-
-            WpfButton AddNewServer = new WpfButton(mainWindow);
-            AddNewServer.WindowTitles.Add(SMname);
-            AddNewServer.TechnologyName = "MSAA";
-            AddNewServer.SearchProperties.Add("ControlType", "MenuItem");
-            AddNewServer.SearchProperties[WpfButton.PropertyNames.Name] = "Add new server";
             #endregion
         }
     }

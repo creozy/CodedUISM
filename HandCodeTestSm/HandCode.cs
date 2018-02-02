@@ -42,7 +42,21 @@ namespace HandCodeTestSm
             mainWindow.SearchProperties[WpfWindow.PropertyNames.Name] = "Service Manager20.1 20.1.86.107687 (20.1)";
             mainWindow.WindowTitles.Add("Service Manager20.1 20.1.86.107687 (20.1)");
 
-            UITestControl parent = new UITestControl(mainWindow);
+            string Name = "Player";
+
+            WpfWindow PlayerWindow = new WpfWindow();
+            PlayerWindow.SearchProperties[WpfWindow.PropertyNames.Name] = Name;
+            PlayerWindow.WindowTitles.Add(Name);
+
+            WpfEdit PlayerLogin = new WpfEdit(PlayerWindow);
+            PlayerLogin.WindowTitles.Add(Name);
+            PlayerLogin.TechnologyName = "MSAA";
+            PlayerLogin.SearchProperties.Add("ControlType", "Edit");
+            PlayerLogin.SearchProperties.Add("ControlName", "control7"); 
+
+            Keyboard.SendKeys(PlayerLogin, "ololo");
+
+            /*UITestControl parent = new UITestControl(mainWindow);
             parent.WindowTitles.Add("Service Manager20.1 20.1.86.107687 (20.1)");
             parent.TechnologyName = "MSAA";
             parent.SearchProperties.Add("ControlType", "MenuBar");
@@ -66,7 +80,7 @@ namespace HandCodeTestSm
 
             Mouse.Click(Login);
 
-            Playback.Wait(10000);
+            Playback.Wait(10000);*/
 
         }
         
