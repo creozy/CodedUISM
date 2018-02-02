@@ -54,9 +54,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HandCode.cs" />
+    <Compile Include="PageObjects\Parametrs.cs" />
+    <Compile Include="PageObjects\ServerName.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UIMap.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
