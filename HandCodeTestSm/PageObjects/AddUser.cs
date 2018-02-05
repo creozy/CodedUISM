@@ -19,8 +19,10 @@ namespace HandCodeTestSm
         {
             #region definition AddUser
             WpfWindow mainWindow = new WpfWindow();
-            mainWindow.SearchProperties[WpfWindow.PropertyNames.Name] = "Service Manager20.1 20.1.86.107687 (20.1)";
-            mainWindow.WindowTitles.Add("Service Manager20.1 20.1.86.107687 (20.1)");
+            mainWindow.SearchProperties[WpfWindow.PropertyNames.Name] = SMname;
+            mainWindow.WindowTitles.Add(SMname);
+
+
 
             #endregion
         }
