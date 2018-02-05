@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<UITest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="" Id="60c0065f-f7e8-47c3-b805-93b791aea57b" AssemblyVersion="15.0.26208.0" Version="1.0" xmlns="http://schemas.microsoft.com/VisualStudio/TeamTest/UITest/2010">
+  <Configuration>
+    <Group Name="IE">
+      <Setting Name="Version" Value="9.11.9600.18895" WarningLevel="1" />
+      <Setting Name="InformationBar" WarningLevel="1" />
+      <Setting Name="AutoCompletePassword" WarningLevel="1" />
+      <Setting Name="AutoCompleteForm" Value="no" WarningLevel="1" />
+      <Setting Name="DefaultBrowser" Value="IEXPLORE.EXE" WarningLevel="1" />
+      <Setting Name="PopupBlocker" Value="yes" WarningLevel="1" />
+      <Setting Name="TabbedBrowsing" WarningLevel="2" />
+      <Setting Name="InternetZoneSecurity" Value="66816" WarningLevel="2" />
+      <Setting Name="IntranetZoneSecurity" Value="69632" WarningLevel="2" />
+      <Setting Name="TrustedZoneSecurity" Value="70912" WarningLevel="2" />
+      <Setting Name="RestrictedZoneSecurity" Value="73728" WarningLevel="2" />
+      <Setting Name="PhishingFilter" WarningLevel="1" />
+      <Setting Name="EnhancedSecurityConfiguration" WarningLevel="1" />
+    </Group>
+    <Group Name="OS">
+      <Setting Name="Name" Value="Майкрософт Windows 8.1" WarningLevel="2" />
+      <Setting Name="Version" Value="Microsoft Windows NT 6.3.9600.0" WarningLevel="2" />
+      <Setting Name="IsUserAdmin" Value="True" WarningLevel="2" />
+      <Setting Name="Is64BitOperatingSystem" Value="True" WarningLevel="2" />
+      <Setting Name="IsTerminalServerSession" Value="False" WarningLevel="2" />
+      <Setting Name="OSLanguage" Value="1049" WarningLevel="1" />
+      <Setting Name="UserLocale" Value="1049" WarningLevel="1" />
+      <Setting Name="DragFullWindows" Value="True" WarningLevel="2" />
+      <Setting Name="ScreenResolutionWidth" Value="1680" WarningLevel="2" />
+      <Setting Name="ScreenResolutionHeight" Value="1050" WarningLevel="2" />
+      <Setting Name="SystemDPIX" Value="96" WarningLevel="2" />
+      <Setting Name="SystemDPIY" Value="96" WarningLevel="2" />
+      <Setting Name="Aero" Value="1" WarningLevel="1" />
+      <Setting Name="UACEnabled" Value="0" WarningLevel="2" />
+      <Setting Name="UACPromptEnabled" Value="0" WarningLevel="1" />
+    </Group>
+    <Group Name="TechnologyManagers" />
+  </Configuration>
+  <InitializeActions />
+  <ExecuteActions>
+    <MouseAction UIObjectName="UIMap.UIServiceManager200newWindow.UIDocumentGroupTabList.UISEysgt1Group.UIItemPane.UIToolsMenuBar.UIActionsMenuItem.UIPokergamesMenuItem.UICreatepokertablegrouMenuItem">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="51" Y="21" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <TestStepMarkerAction Comment="" MarkerInformation="ForTest">
+      <ParameterName />
+      <StepId>-1</StepId>
+      <Direction>Start</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>0</WorkItemId>
+      <MarkerRegionType>Action</MarkerRegionType>
+    </TestStepMarkerAction>
+  </ExecuteActions>
+  <CleanupActions />
+  <OnErrorActions />
+  <Maps>
+    <UIMap Id="UIMap">
+      <TopLevelWindows>
+        <TopLevelWindow ControlType="Window" Id="UIServiceManager200newWindow" FriendlyName="Service Manager20.0new 20.1.86.107687 (20.1)" SpecialControlType="None" SessionId="198038">
+          <TechnologyName>MSAA</TechnologyName>
+          <WindowTitles>
+            <WindowTitle>Service Manager20.0new 20.1.86.107687 (20.1)</WindowTitle>
+          </WindowTitles>
+          <SearchConfigurations>
+            <SearchConfiguration>VisibleOnly</SearchConfiguration>
+          </SearchConfigurations>
+          <AndCondition Id="SearchCondition">
+            <PropertyCondition Name="Name">Service Manager20.0new 20.1.86.107687 (20.1)</PropertyCondition>
+            <PropertyCondition Name="ClassName" Operator="Contains">HwndWrapper</PropertyCondition>
+            <PropertyCondition Name="ControlType">Window</PropertyCondition>
+          </AndCondition>
+          <SupportLevel>1</SupportLevel>
+          <Descendants>
+            <UIObject ControlType="TabList" Id="UIDocumentGroupTabList" FriendlyName="documentGroup" SpecialControlType="None">
+              <TechnologyName>UIA</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Service Manager20.0new 20.1.86.107687 (20.1)</WindowTitle>
+              </WindowTitles>
+              <AndCondition>
+                <PropertyCondition Name="FrameworkId">WPF</PropertyCondition>
+                <PropertyCondition Name="ControlType">TabList</PropertyCondition>
+                <PropertyCondition Name="AutomationId">documentGroup</PropertyCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Group" Id="UISEysgt1Group" FriendlyName="SE: ysg.t1" SpecialControlType="None">
+                  <TechnologyName>UIA</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Service Manager20.0new 20.1.86.107687 (20.1)</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition>
+                    <PropertyCondition Name="FrameworkId">WPF</PropertyCondition>
+                    <PropertyCondition Name="ControlType">Group</PropertyCondition>
+                    <PropertyCondition Name="AutomationId">SE: ysg.t1</PropertyCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants>
+                    <UIObject ControlType="Pane" Id="UIItemPane" FriendlyName="" SpecialControlType="None">
+                      <TechnologyName>UIA</TechnologyName>
+                      <WindowTitles>
+                        <WindowTitle>Service Manager20.0new 20.1.86.107687 (20.1)</WindowTitle>
+                      </WindowTitles>
+                      <AndCondition>
+                        <PropertyCondition Name="FrameworkId">WPF</PropertyCondition>
+                        <PropertyCondition Name="ControlType">Pane</PropertyCondition>
+                        <PropertyCondition Name="ClassName">Uia.WindowsFormsHost</PropertyCondition>
+                      </AndCondition>
+                      <SupportLevel>0</SupportLevel>
+                      <Descendants>
+                        <UIObject ControlType="MenuBar" Id="UIToolsMenuBar" FriendlyName="Tools" SpecialControlType="None">
+                          <TechnologyName>MSAA</TechnologyName>
+                          <WindowTitles>
+                            <WindowTitle>Service Manager20.0new 20.1.86.107687 (20.1)</WindowTitle>
+                          </WindowTitles>
+                          <SearchConfigurations>
+                            <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                          </SearchConfigurations>
+                          <AndCondition Id="SearchCondition">
+                            <PropertyCondition Name="Name">Tools</PropertyCondition>
+                            <PropertyCondition Name="ControlType">MenuBar</PropertyCondition>
+                          </AndCondition>
+                          <SupportLevel>100</SupportLevel>
+                          <Descendants>
+                            <UIObject ControlType="MenuItem" Id="UIActionsMenuItem" FriendlyName="Actions" SpecialControlType="None">
+                              <TechnologyName>MSAA</TechnologyName>
+                              <WindowTitles>
+                                <WindowTitle>Service Manager20.0new 20.1.86.107687 (20.1)</WindowTitle>
+                              </WindowTitles>
+                              <SearchConfigurations>
+                                <SearchConfiguration>Expand</SearchConfiguration>
+                              </SearchConfigurations>
+                              <AndCondition Id="SearchCondition">
+                                <PropertyCondition Name="Name">Actions</PropertyCondition>
+                                <PropertyCondition Name="ControlType">MenuItem</PropertyCondition>
+                              </AndCondition>
+                              <SupportLevel>100</SupportLevel>
+                              <Descendants>
+                                <UIObject ControlType="MenuItem" Id="UIPokergamesMenuItem" FriendlyName="Poker games" SpecialControlType="None">
+                                  <TechnologyName>MSAA</TechnologyName>
+                                  <WindowTitles>
+                                    <WindowTitle>Service Manager20.0new 20.1.86.107687 (20.1)</WindowTitle>
+                                  </WindowTitles>
+                                  <SearchConfigurations>
+                                    <SearchConfiguration>Expand</SearchConfiguration>
+                                  </SearchConfigurations>
+                                  <AndCondition Id="SearchCondition">
+                                    <PropertyCondition Name="Name">Poker games</PropertyCondition>
+                                    <PropertyCondition Name="ControlType">MenuItem</PropertyCondition>
+                                  </AndCondition>
+                                  <SupportLevel>0</SupportLevel>
+                                  <Descendants>
+                                    <UIObject ControlType="MenuItem" Id="UICreatepokertablegrouMenuItem" FriendlyName="Create poker table group" SpecialControlType="None">
+                                      <TechnologyName>MSAA</TechnologyName>
+                                      <WindowTitles>
+                                        <WindowTitle>Service Manager20.0new 20.1.86.107687 (20.1)</WindowTitle>
+                                      </WindowTitles>
+                                      <SearchConfigurations>
+                                        <SearchConfiguration>Expand</SearchConfiguration>
+                                      </SearchConfigurations>
+                                      <AndCondition Id="SearchCondition">
+                                        <PropertyCondition Name="Name">Create poker table group</PropertyCondition>
+                                        <PropertyCondition Name="ControlType">MenuItem</PropertyCondition>
+                                      </AndCondition>
+                                      <SupportLevel>0</SupportLevel>
+                                      <Descendants />
+                                    </UIObject>
+                                  </Descendants>
+                                </UIObject>
+                              </Descendants>
+                            </UIObject>
+                          </Descendants>
+                        </UIObject>
+                      </Descendants>
+                    </UIObject>
+                  </Descendants>
+                </UIObject>
+              </Descendants>
+            </UIObject>
+          </Descendants>
+        </TopLevelWindow>
+      </TopLevelWindows>
+    </UIMap>
+  </Maps>
+  <ValueMap>
+    <ParameterList />
+  </ValueMap>
+</UITest>
