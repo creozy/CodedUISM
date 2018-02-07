@@ -14,7 +14,7 @@ namespace White
         {
             get
             {
-                Window window = GetWindow("Service Manager20.1 20.1.86.107687 (20.1)");
+                Window window = GetWindow("Service Manager20.2 20.2.19.107662 (20.2)");
                 return new MainWindow(window);
             }
         }

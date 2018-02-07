@@ -6,56 +6,14 @@ namespace White
 {
     public class NewServerWindow : WindowObject
     {
-       
-        private TextBox ServName
-        {
-            get
-            {
-                return _window.Get<TextBox>(SearchCriteria.ByAutomationId("control4"));
-            }
-        }
-        private TextBox ServUrl
-        {
-            get
-            {
-                return _window.Get<TextBox>(SearchCriteria.ByAutomationId("control6"));
-            }
-        }
-        private TextBox ServLogin
-        {
-            get
-            {
-                return _window.Get<TextBox>(SearchCriteria.ByAutomationId("control7"));
-            }
-        }
-        private TextBox ServPass
-        {
-            get
-            {
-                return _window.Get<TextBox>(SearchCriteria.ByAutomationId("control8").AndByText("PasswordTextEdit"));
-            }
-        }
-        private CheckBox SavePass
-        {
-            get
-            {
-                return _window.Get<CheckBox>(SearchCriteria.ByAutomationId("control9"));
-            }
-        }
-        private Button Save
-        {
-            get
-            {
-                return ButtonAID("saveButton");
-            }
-        }
-        private Button Close
-        {
-            get
-            {
-                return _window.Get<Button>(SearchCriteria.ByAutomationId("closeButton").AndByText("Close"));
-            }
-        }
+
+        private TextBox ServName => TextBox("control4");
+        private TextBox ServUrl => TextBox("control6");
+        private TextBox ServLogin => TextBox("control7");
+        private TextBox ServPass => _window.Get<TextBox>(SearchCriteria.ByAutomationId("control8").AndByText("PasswordTextEdit"));
+        private CheckBox SavePass => CheckBox("control9");
+        private Button Save => Button("saveButton");
+        private Button Close => _window.Get<Button>(SearchCriteria.ByAutomationId("closeButton").AndByText("Close"));
 
         internal NewServerWindow(Window window) : base (window) { }
 

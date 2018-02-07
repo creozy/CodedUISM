@@ -1,5 +1,6 @@
 ﻿using TestStack.White.UIItems;
 using TestStack.White.UIItems.Finders;
+using TestStack.White.UIItems.ListBoxItems;
 using TestStack.White.UIItems.WindowItems;
 
 namespace White
@@ -12,20 +13,29 @@ namespace White
         {
             _window = window;
         }
-
-        protected Button ButtonText(string title)
-        {
-            return _window.Get<Button>(SearchCriteria.ByText(title));
-        }
-
-        protected Button ButtonAID(string title)
+     
+        protected Button Button(string title)
         {
             return _window.Get<Button>(SearchCriteria.ByAutomationId(title));
         }
 
-        protected Button Button(string title1 = null, string title2 = null)
+        protected TextBox TextBox(string title)
         {
-            return _window.Get<Button>(SearchCriteria.ByAutomationId(title1).AndByText(title2));
+            return _window.Get<TextBox>(SearchCriteria.ByAutomationId(title));
         }
+
+        protected ComboBox ComboBox(string title)
+        {
+            return _window.Get<ComboBox>(SearchCriteria.ByAutomationId(title));
+        }
+         protected CheckBox CheckBox(string title)
+        {
+            return _window.Get<CheckBox>(SearchCriteria.ByAutomationId(title));
+        }
+        protected ListItem Selectvalue(string value)
+        {
+            return _window.Get<ListItem>(SearchCriteria.ByText(value));
+        }
+      
     }
 }
